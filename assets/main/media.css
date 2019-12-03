@@ -1,53 +1,138 @@
-@media only screen and (max-width: 1096px) {
-    #news-panel .news-list  {
-        display: inline-block !important;
-        margin-right: 5%;
-    }
-    #news-panel{
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-    #news-panel .news-list li img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 950px){
-    #slideShow img{
+@media only screen and (max-width: 950px) {
+    #slideShow img {
         width: 100% !important;
         height: 100% !important;
     }
 
-    #adsPanel{
+    article {
         margin-top: 50% !important;
     }
-    #adsPanel .parent{
-        margin-right: 5% !important;
+
+    article ul li .bottom-right {
+        font-size: 20px !important;
     }
 
-    #news-panel h2{
-        font-size: 15px;
+    .dessert-list-parent {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(6, 1fr) !important;
     }
 }
 
-@media only screen and (max-width: 450px){
-    #slideShow{
+@media only screen and (max-width: 450px) {
+    #slideShow {
         display: none;
     }
-    footer .footer-content{
+
+    article ul li .bottom-right {
+        font-size: 10px !important;
+    }
+
+    #hamb-item img {
+        width: 85% !important;
+    }
+
+    .hamb-list-parent {
+        display: inline-block !important;
+    }
+
+    footer .footer-content {
         display: inline-block !important;
     }
 }
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 538px) {
+    .pizza-list-parent {
+        display: inline-block !important;
+    }
+
+    .salad-list-parent {
+        display: inline-block !important;
+    }
+
+    .dessert-list-parent {
+        display: inline-block !important;
+    }
+}
+
+@media only screen and (max-width: 850px) {
     .dropdown-content {
         min-width: 140px !important;
         margin-left: -15%;
     }
+
+    .drinks-list-parent {
+        display: inline-block !important;
+    }
+
+    .snacks-list-parent {
+        display: inline-block !important;
+    }
+
+    .news-list {
+        display: inline-block !important;
+    }
 }
 
 @media only screen and (max-width: 1395px) {
-    .pizza-list-parent{
+    .pizza-list-parent {
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
+    }
+
+    .drinks-list-parent {
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
+    }
+
+    .snacks-list-parent {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .pizza-list-parent {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(5, 1fr) !important;
+    }
+
+    .sushi-list-parent {
         display: inline-block !important;
+    }
+}
+
+@media only screen and (max-width: 1225px) {
+    .hamb-list-parent {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(7, 1fr) !important;
+    }
+}
+
+@media only screen and (max-width: 1225px) {
+    .drinks-list-parent {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(4, 1fr) !important;
+    }
+}
+
+@media only screen and (max-width: 1325px) {
+    .news-panel .news-content {
+        display: inline-block !important;
+    }
+
+    .news-panel .news-content {
+        margin-right: 15% !important;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .sushi-list-parent {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(4, 1fr) !important;
+    }
+
+    .salad-list-parent {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
     }
 }
