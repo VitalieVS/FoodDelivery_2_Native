@@ -37,20 +37,18 @@ $(document).ready(function () {
         incrementCartItems();
     }
 
-    function totalPrice(item) {
-        totalPriceItems += item;
-    }
-
     function usaShow(){
-        document.getElementById("rest-ul").children[0].style.display="block";
         document.getElementById("rest-ul").children[1].style.display="block";
+        document.getElementById("rest-ul").children[2].style.display="block";
         document.getElementById("rest-ul").children[3].style.display="block";
+        document.getElementById("rest-ul").children[4].style.display="block";
     }
 
     function usaHide(){
-        document.getElementById("rest-ul").children[0].style.display="none";
         document.getElementById("rest-ul").children[1].style.display="none";
+        document.getElementById("rest-ul").children[2].style.display="none";
         document.getElementById("rest-ul").children[3].style.display="none";
+        document.getElementById("rest-ul").children[4].style.display="none";
     }
 
     $('.button-usa').click(function () {
@@ -64,14 +62,16 @@ $(document).ready(function () {
     });
 
     function belgiumShow() {
-        document.getElementById("rest-ul").children[2].style.display="block";
-        document.getElementById("rest-ul").children[4].style.display="block";
         document.getElementById("rest-ul").children[5].style.display="block";
+        document.getElementById("rest-ul").children[6].style.display="block";
+        document.getElementById("rest-ul").children[7].style.display="block";
+        document.getElementById("rest-ul").children[8].style.display="block";
     }
     function belgiumHide(){
-        document.getElementById("rest-ul").children[2].style.display="none";
-        document.getElementById("rest-ul").children[4].style.display="none";
         document.getElementById("rest-ul").children[5].style.display="none";
+        document.getElementById("rest-ul").children[6].style.display="none";
+        document.getElementById("rest-ul").children[7].style.display="none";
+        document.getElementById("rest-ul").children[8].style.display="none";
     }
 
 });

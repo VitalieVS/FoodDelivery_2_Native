@@ -743,7 +743,17 @@ header li:nth-child(1) .dropdown-content {
     cursor: pointer;
 }
 
-/*selectorul probleme, костыль mai sus)*/
+.button-usa:hover{
+    background-color: yellow;
+    color: black;
+    opacity: 0.8;
+}
+
+.button-belgium:hover{
+    background-color: yellow;
+    color: black;
+    opacity: 0.8;
+}
 
 .restaurant-wrap{
     height: 200px;
@@ -755,10 +765,28 @@ header li:nth-child(1) .dropdown-content {
     border: 1px solid gray;
 }
 
-#list-of-rest ul{
-    list-style: none;
+#list-of-rest #rest-ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#list-of-rest p{
+    font-size: 20px !important;
 }
 
-#list-of-rest li{
-    display: none;
+#list-of-rest #rest-ul li{
+   display: none;
+}
+
+#list-of-rest li:hover{
+    border: 1px solid purple !important;
+}
+.restaurant-container{
+    height: 300px;
+}
+
+.restaurant-container img {
+    width: 200px;
 }
