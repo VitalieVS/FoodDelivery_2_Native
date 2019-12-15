@@ -713,7 +713,7 @@ header li:nth-child(1) .dropdown-content {
     right: 0;
 }
 
-.restaurant-wrap i{
+.restaurant-wrap i {
     color: yellow;
 }
 
@@ -730,7 +730,7 @@ header li:nth-child(1) .dropdown-content {
     cursor: pointer;
 }
 
-.button-belgium{
+.button-belgium {
     background-color: transparent;
     border: 2px solid yellow;
     color: white;
@@ -743,50 +743,72 @@ header li:nth-child(1) .dropdown-content {
     cursor: pointer;
 }
 
-.button-usa:hover{
+.button-usa:hover {
     background-color: yellow;
     color: black;
     opacity: 0.8;
 }
 
-.button-belgium:hover{
+.button-belgium:hover {
     background-color: yellow;
     color: black;
     opacity: 0.8;
 }
 
-.restaurant-wrap{
+.restaurant-wrap {
     height: 200px;
 }
 
-#list-of-rest{
+#list-of-rest {
     margin-top: 30px;
     width: 90%;
     border: 1px solid gray;
 }
 
-#list-of-rest #rest-ul{
+#list-of-rest #rest-ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
-#list-of-rest p{
+
+#list-of-rest p {
     font-size: 20px !important;
 }
 
-#list-of-rest #rest-ul li{
-   display: none;
+#list-of-rest #rest-ul li {
+    display: none;
 }
 
-#list-of-rest li:hover{
+#list-of-rest li:hover {
     border: 1px solid purple !important;
 }
-.restaurant-container{
+
+.restaurant-container {
     height: 300px;
 }
 
 .restaurant-container img {
     width: 200px;
+}
+
+#new-content a:hover{
+    cursor: pointer;
+}
+
+#new-content{
+    background-color: gray;
+    border: 2px solid black;
+    width: 90%;
+    height: 60%;
+    position: absolute;
+    z-index: 5;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0.9;
 }
