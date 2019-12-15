@@ -1,41 +1,50 @@
 $(document).ready(function () {
-    let cartPrice = [];
-    let cartCount = 0;
-    let totalPriceItems = 0;
+let cartPrice = [];
+let cartCount = 0;
+let totalPriceItems = 0;
 
-    $(function () {
-        $(document).tooltip();
-    });
+$(function () {
+    $(document).tooltip();
+});
 
-    $('.item-price').click(function () {
-        let itemPrice = ($(this).attr("data-value") * 1);
-        priceAdd(itemPrice);
-        cartDisplay();
-    });
+$('.item-price').click(function () {
+    let itemPrice = ($(this).attr("data-value") * 1);
+    priceAdd(itemPrice);
+    cartDisplay();
+    addedConfirmation();
+});
 
-    function incrementCartItems() {
-        cartCount++;
-    }
+function incrementCartItems() {
+    cartCount++;
+}
 
-    function cartDisplay() {
-        document.getElementById("cart-count").innerHTML = cartCount;
-        document.getElementById("total-price").innerHTML = totalPriceItems;
-    }
+function addedConfirmation() {
+    alert('Added to cart!'); //will rework in future.
+}
 
-    function priceAdd(itemPrice) {
-        cartPrice.push(itemPrice);
-        cartSum();
-        priceClear();
-    }
+function cartDisplay() {
+    document.getElementById("cart-count").innerHTML = cartCount;
+    document.getElementById("total-price").innerHTML = totalPriceItems;
+}
 
-    function priceClear() {
-        cartPrice = [];
-    }
+function priceAdd(itemPrice) {
+    cartPrice.push(itemPrice);
+    cartSum();
+    priceClear();
+}
 
-    function cartSum() {
-        cartPrice.forEach(totalPrice);
-        incrementCartItems();
-    }
+function priceClear() {
+    cartPrice = [];
+}
+
+function cartSum() {
+    cartPrice.forEach(totalPrice);
+    incrementCartItems();
+}
+
+function totalPrice(item) {
+    totalPriceItems += item;
+}
 
     function usaShow(){
         document.getElementById("rest-ul").children[1].style.display="block";
@@ -73,5 +82,4 @@ $(document).ready(function () {
         document.getElementById("rest-ul").children[7].style.display="none";
         document.getElementById("rest-ul").children[8].style.display="none";
     }
-
 });
