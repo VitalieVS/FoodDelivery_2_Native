@@ -901,3 +901,17 @@ header li:nth-child(1) .dropdown-content {
     display: block;
     margin-top: 5px;
 }
+
+#events{
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+}
+
+.p-2{
+    color: white;
+}
+
+#events img{
+   width: 80%;
+}
