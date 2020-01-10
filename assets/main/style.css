@@ -902,16 +902,36 @@ header li:nth-child(1) .dropdown-content {
     margin-top: 5px;
 }
 
-#events{
+#events {
     margin-top: 50px;
     color: black;
     text-align: center;
 }
 
-.p-2{
+.p-2 {
     color: white;
 }
 
-#events img{
-   width: 80%;
+#events img {
+    width: 80%;
+}
+
+#cartSection ul{
+    list-style-type: none;
+}
+
+#cartSection li {
+    color: white;
+}
+
+#cartSection #order_items{
+    background-color: transparent;
+    border: 2px solid yellow;
+    color: white;
+    width: 300px;
+}
+
+#cartSection #order_items:hover{
+    background-color: yellow;
+    color: black;
 }
