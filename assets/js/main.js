@@ -2,24 +2,31 @@ $(document).ready(function () {
     let cartPrice = [];
     let cartCount = 0;
     let totalPriceItems = 0;
-
     $(function () {
         $(document).tooltip();
     });
 
+    getLocal();
+
     $('.item-price').click(function () {
         let itemPrice = ($(this).attr("data-value") * 1);
+        let id = ($(this).attr("id"));
         priceAdd(itemPrice);
         cartDisplay();
         addedConfirmation();
+        setStorage(id, itemPrice);
     });
+
+    function setStorage(id, item) {
+        localStorage.setItem(id, item);
+    }
 
     function incrementCartItems() {
         cartCount++;
     }
 
     function addedConfirmation() {
-        alert('Added to cart!'); //will rework in future.
+        console.log('Added to cart!'); //will rework in future.
     }
 
     function cartDisplay() {
@@ -99,4 +106,16 @@ $(document).ready(function () {
     function hideNew() {
         document.getElementById("new-content").style.display = "none";
     }
+
+    function getLocal() {
+        if (localStorage.length != 0) {
+            cartStoreDisplay();
+        }
+    }
+
+    function cartStoreDisplay() {
+        document.getElementById("cart-count").innerHTML = localStorage.length;
+    }
+
+    //will rework whole code in future. Nonsense now.
 });
