@@ -916,7 +916,7 @@ header li:nth-child(1) .dropdown-content {
     width: 80%;
 }
 
-#cartSection ul{
+#cartSection ul {
     list-style-type: none;
 }
 
@@ -924,14 +924,14 @@ header li:nth-child(1) .dropdown-content {
     color: white;
 }
 
-#cartSection #order_items{
+#cartSection #order_items {
     background-color: transparent;
     border: 2px solid yellow;
     color: white;
     width: 300px;
 }
 
-#cartSection #order_items:hover{
+#cartSection #order_items:hover {
     background-color: yellow;
     color: black;
 }
